@@ -1,6 +1,6 @@
 import "./App.css";
 import { 
-   createBrowserRouter, RouterProvider 
+   createHashRouter, RouterProvider 
   } from "react-router-dom";
 import Home from "./components/Home";
 import SearchResult from "./components/SearchResult";
@@ -12,7 +12,7 @@ import Actor from "./components/Actor";
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Home/>,
